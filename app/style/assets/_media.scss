@@ -1,0 +1,129 @@
+@media screen and (max-width: 1366px) {
+  /*desktop*/
+  .container {
+    width: 950px;
+  }
+  .tiles__item {
+    padding: 30px 20px;
+  }
+  .tiles__item--title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /*laptop*/
+  .container {
+    width: 700px;
+  }
+  .title {
+    font-size: 27px;
+    color: black;
+  }
+  .header__url {
+    top: 35%;
+  }
+  .info-block__right {
+    margin-top: 35%;
+  }
+  .text {
+    font-size: 13px;
+  }
+  .tiles__wrapper {
+    .container {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /*tablets*/
+  .container {
+    width: 100%;
+    padding: 0 50px;
+  }
+  .header {
+    height: 50%;
+  }
+  .header__left,
+  .header__right {
+    float: none;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .aside__url {
+    display: none;
+  }
+  .header__right {
+    height: 50%;
+  }
+  .header__capture {
+    display: block;
+    position: static;
+  }
+  .header__img img {
+    margin: auto;
+    transform: translateX(-50px);
+  }
+  .info-block__left,
+  .info-block__right {
+    width: 100%;
+    float: none;
+    margin-top: 0;
+  }
+  .tiles__item {
+    width: 50%;
+  }
+  .tiles__list--top .tiles__item:nth-child(3) {
+    width: 60%;
+  }
+  .tiles__list--bottom .tiles__item:nth-child(2) {
+    display: none;
+  }
+  .details__item {
+    width: 100%;
+  }
+  .details__item--title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .block__details--title {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /*phones*/
+  .container {
+    padding: 0 20px;
+  }
+  .header__capture--title {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  .header__capture--text {
+    width: 300px;
+  }
+  .header__right {
+    position: absolute;
+    top: 50px;
+    height: 35%;
+    transform: rotate(-9deg);
+  }
+  .info-block__left {
+    padding-right: 0;
+  }
+  .tiles__item {
+    width: 100% !important;
+  }
+  .block__info {
+    padding-bottom: 20px;
+  }
+  .tiles__wrapper .container {
+    padding: 0;
+  }
+  .block__details {
+    padding: 30px 0;
+  }
+}

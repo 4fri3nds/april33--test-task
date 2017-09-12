@@ -1,0 +1,78 @@
+extends ./modules/_head
+block variables
+  - var title = 'Home page'
+block content
+  .block__info
+    .container
+      .info-block__left
+        h3.title.block__info--title Start something new
+        p.text.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        p.text.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+        p.text.
+           eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.
+      .info-block__right
+        p.text.
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+        p.text.
+          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+  .block__tiles
+    .tiles__wrapper
+      .container
+        ul.tiles__list.tiles__list--top
+          li.tiles__item
+            h4.tiles__item--title Design quality
+            p.tiles__item--text.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing .
+            a.tiles__item--link(href="#") Find Out more &#8594;
+          li.tiles__item
+            h4.tiles__item--title Built to last
+            p.tiles__item--text.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing .
+            .tiles__item--like
+              a.tiles__item--link(href="#") Find Out more &#8594;
+              a.tiles__item--icon
+                +icon('heart')
+          li.tiles__item
+            h4.tiles__item--title Our clients
+            p.tiles__item--text.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing .
+            a.tiles__item--link(href="#") Find Out more &#8594;
+          li.tiles__item
+            h4.tiles__item--title How to shoo great
+            p.tiles__item--text.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing .
+            a.tiles__item--link(href="#") Find Out more &#8594;
+
+        ul.tiles__list.tiles__list--bottom
+          li.tiles__item
+            h4.tiles__item--title Sign up & see why
+            p.tiles__item--text.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing .
+            .tiles__item--like
+              a.tiles__item--link(href="#") Find Out more &#8594;
+              a.tiles__item--icon
+                +icon('heart')
+          li.tiles__item
+            h4.tiles__item--title Perfect pictures
+            p.tiles__item--text.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing .
+            a.tiles__item--link(href="#") Find Out more &#8594;
+          li.tiles__item
+            h4.tiles__item--title STart somthing new
+            p.tiles__item--text.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing .
+            a.tiles__item--link(href="#") Find Out more &#8594;
+
+  .block__details
+    .aside__url <i>takpapp.com</i>
+    .container
+      h3.title.block__details--title A look at the details
+      ul.details__list
+        -var details = ['Web based','Performance','Clultral','Sustainability']
+        each detail in details
+          li.details__item
+            h4.details__item--title= detail
+            p.text.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
