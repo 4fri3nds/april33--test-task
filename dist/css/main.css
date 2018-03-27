@@ -288,26 +288,31 @@ i {
   background: #615f7d; }
 
 .tiles__list--top .tiles__item:nth-child(3) {
-  background: url("../img/layer6.png");
+  background-image: url("../img/layer6.png");
   background-size: cover;
-  background-position: right; }
+  background-position: right; 
+  background-color: #6666CC;
+  }
 
 .tiles__list--top .tiles__item:nth-child(4) {
   background: #bd8cbf;
   width: 40%; }
 
 .tiles__list--bottom .tiles__item:nth-child(1) {
-  background: url("../img/layer5.png");
+  background-image: url("../img/layer5.png");
   background-size: cover;
-  width: 40%; }
+  width: 40%; 
+  background-color: #FFCC33;
+  }
 
 .tiles__list--bottom .tiles__item:nth-child(2) {
   background: #82ca9c; }
 
 .tiles__list--bottom .tiles__item:nth-child(3) {
-  background: url("../img/layer14.png");
+  background-image: url("../img/layer14.png");
   background-size: cover;
   background-position: right;
+  background-color: #2E8B57; 
   width: 40%; }
 
 /* details */
